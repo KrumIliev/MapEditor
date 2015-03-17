@@ -256,8 +256,9 @@ public class Panel extends JPanel implements Runnable, KeyListener, MouseListene
 			if (y >= HEIGHT - numRows * tileSize) {
 				// TODO 
 				b = x / tileSize;
-				if (y >= HEIGHT - (numRows - 1) * tileSize) b = x / tileSize + numTiles - numColumns * 2;
-				if (y >= HEIGHT - (numRows - 2) * tileSize) b = x / tileSize + numTiles - numColumns;
+				if (y >= HEIGHT - (numRows - 1) * tileSize) b = x / tileSize + numTiles - numColumns * 3;
+				if (y >= HEIGHT - (numRows - 2) * tileSize) b = x / tileSize + numTiles - numColumns * 2;
+				if (y >= HEIGHT - (numRows - 3) * tileSize) b = x / tileSize + numTiles - numColumns;
 				currentBlock = b;
 			} else {
 				y = e.getY() - ymap;
